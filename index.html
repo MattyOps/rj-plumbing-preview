@@ -32,7 +32,18 @@ footer{background:var(--slate);color:#c9d3dc;padding:48px 0 90px;font-size:14px}
 .mbar{display:none}
 @media(max-width:1120px){nav a:nth-child(-n+4){display:none}}@media(max-width:900px){nav,.hcta .btn{display:none}.hero .wrap,.why,.fin{grid-template-columns:1fr}h1{font-size:36px}.hero{padding:44px 0 64px;min-height:0;background:linear-gradient(180deg,rgba(14,28,48,.88),rgba(14,28,48,.78)),url(img/hero-sample.jpg) 70% center/cover no-repeat #1b2836}.hero .lead{font-size:17px}.hero-label{left:16px;right:16px;max-width:none;font-size:11px;text-align:center}.trust .wrap,.spec{grid-template-columns:1fr 1fr}.grid,.reviews{grid-template-columns:1fr}footer .wrap{grid-template-columns:1fr}section{padding:56px 0}h2{font-size:28px}.why .ph{height:240px}
 .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:20;box-shadow:0 -4px 16px rgba(0,0,0,.15)}.mbar a{padding:16px;text-align:center;font-weight:800}.mbar .c{background:var(--slate);color:#fff}.mbar .k{background:var(--brass);color:var(--slate)}.topbar .wrap span:nth-child(n+3){display:none}}
-.hero-wm{position:absolute;left:60%;right:2%;text-align:center;top:46%;transform:translateY(-50%) rotate(-12deg);z-index:0;font-size:96px;font-weight:800;letter-spacing:.1em;color:rgba(255,255,255,.25);pointer-events:none;user-select:none}@media(max-width:900px){.hero .hero-wm{left:auto;text-align:right;top:6px;right:10px;transform:rotate(-6deg);font-size:20px;letter-spacing:.1em;color:rgba(255,255,255,.3)}}</style></head><body>
+.hero-wm{position:absolute;left:60%;right:2%;text-align:center;top:46%;transform:translateY(-50%) rotate(-12deg);z-index:0;font-size:96px;font-weight:800;letter-spacing:.1em;color:rgba(255,255,255,.25);pointer-events:none;user-select:none}@media(max-width:900px){.hero .hero-wm{left:auto;text-align:right;top:6px;right:10px;transform:rotate(-6deg);font-size:20px;letter-spacing:.1em;color:rgba(255,255,255,.3)}}.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) 440px;gap:40px;align-items:center}
+.bk{background:rgba(255,255,255,.85);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-radius:16px;padding:18px 18px 14px;color:var(--slate);box-shadow:0 12px 40px rgba(0,0,0,.35);font-size:14px}
+.bk .pill{display:block;width:100%;border:0;border-radius:999px;padding:12px 18px;font-family:inherit;font-weight:700!important;font-size:16px!important;line-height:1.2;color:#fff;background:linear-gradient(90deg,var(--brass) 0%,#b07a2c 40%,var(--slate) 100%);text-align:center;cursor:pointer}
+.bk .g2{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;margin-top:12px}.bk .f{margin-top:10px}.bk .g2 .f{margin-top:0}
+.bk label{display:block;font-weight:700;color:var(--slate);margin-bottom:4px;font-size:13.5px}
+.bk input,.bk select,.bk textarea{width:100%;box-sizing:border-box;border:1px solid #8a96a3;border-radius:4px;background:rgba(255,255,255,.55);padding:8px 9px;font:inherit;color:var(--ink)}
+.bk textarea{height:58px;resize:vertical}
+.bk .cap{display:flex;align-items:center;gap:10px;width:230px;margin-top:12px;background:#f9f9f9;border:1px solid #d3d3d3;border-radius:3px;padding:10px 12px;font-size:13px;color:#222}.bk .cap i{width:22px;height:22px;border:2px solid #555;border-radius:2px;background:#fff}.bk .cap small{margin-left:auto;font-size:9px;color:#666;text-align:center}
+.bk .sub{display:flex;flex-direction:column;align-items:flex-end;margin-top:10px}.bk .sub .pill{width:62%}.bk .note2{font-size:11px;color:var(--muted);margin-top:5px}
+.hero{padding:56px 0 64px}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:28px}.bk .sub .pill{width:100%}.bk .sub{align-items:stretch}.bk .note2{text-align:center}}
+</style></head><body>
 <div class="note">SAMPLE CONCEPT for internal review. Striped boxes = real RJ photos to come. Reviews/rating are placeholders until pulled from RJ's Google profile.</div>
 <div class="topbar"><div class="wrap"><span>★ [Google rating] from [#] reviews</span><span>✔ Licensed, Bonded &amp; Insured</span><span>🕗 Mon–Fri 8am–5pm</span><span>💳 Financing Available</span></div></div>
 <header><div class="wrap"><a class="logo" href="#"><span>RJ</span><b style="white-space:nowrap">RJ Plumbing</b></a>
@@ -43,6 +54,13 @@ footer{background:var(--slate);color:#c9d3dc;padding:48px 0 90px;font-size:14px}
 <p class="lead">Honest plumbing from neighbors you know. From small leaks to major repairs, new fixtures and full-house repipes, doing the job right is our top priority.</p>
 <div class="btns"><a class="btn btn-brass" href="tel:+13609546893">📞 Call (360) 954-6893</a><a class="btn btn-ghost" href="#book">Book Online</a></div>
 <div class="stars"><b>★★★★★</b> [Google rating] · [#] reviews from Clark County homeowners</div></div>
+<form class="bk" id="book" onsubmit="event.preventDefault();return false"><button type="button" class="pill">Book Your Service</button>
+<div class="g2"><div class="f"><label>First Name</label><input></div><div class="f"><label>Last Name</label><input></div><div class="f"><label>Phone</label><input type="tel"></div><div class="f"><label>Email</label><input type="email"></div></div>
+<div class="f"><label>Service Address</label><input></div>
+<div class="g2" style="margin-top:10px"><div class="f"><label>Service Needed</label><select><option>Select a service</option><option>Water Heaters</option><option>Sewer &amp; Drain</option><option>Repipes</option><option>Fixtures &amp; Appliances</option><option>Plumbing Remodels</option><option>Water Softeners</option><option>Other</option></select></div><div class="f"><label>Preferred Day</label><input type="date"></div></div>
+<div class="f"><label>Tell Us About Your Plumbing Needs</label><textarea></textarea></div>
+<div class="cap"><i></i>I'm not a robot<small>reCAPTCHA</small></div>
+<div class="sub"><button type="submit" class="pill">Check Availability</button><div class="note2">Mockup — connects to RJ's Jobber booking</div></div></form>
 </div><div class="hero-label">SAMPLE PHOTO — replace with RJ's real team &amp; van</div></section>
 <div class="trust"><div class="wrap">
 <div><i>🏠</i><div><b>Family-Owned &amp; Local</b><small>Our techs live in Clark County too</small></div></div>
